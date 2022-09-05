@@ -1,0 +1,7 @@
+pluginManagement {
+    plugins {
+        id 'com.github.johnrengelman.shadow' version shadowPluginVersion
+    }
+}
+
+rootProject.name = 'stage3-module1-task'
