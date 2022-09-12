@@ -1,6 +1,5 @@
 plugins {
-    id 'java-base'
-    id 'com.github.johnrengelman.shadow'
+    id 'java'
 }
 
 wrapper {
@@ -9,14 +8,22 @@ wrapper {
 
 subprojects {
     apply plugin: 'java'
-    apply plugin: 'com.github.johnrengelman.shadow'
-
+    apply plugin: 'jacoco'
     group = 'com.mjc.school'
     sourceCompatibility = javaVersion
     targetCompatibility = javaVersion
 
     repositories {
         mavenCentral()
+    }
+
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    }
+
+    test {
+        useJUnitPlatform()
     }
 }
 
@@ -32,4 +39,3 @@ task repack(type: Jar, dependsOn: ':module-main:build') {
         }
     }
 }
-
