@@ -1,6 +1,4 @@
-# M2.5 Architecture advanced
-
-### Task
+# Architecture advanced
 
 #### Recommended Timeline
 
