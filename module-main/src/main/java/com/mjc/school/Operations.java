@@ -11,16 +11,16 @@ public enum Operations {
     private final Integer operationNumber;
     private final String operation;
 
-    private Operations(Integer operationNumber, String operation) {
+    private Operations(Integer operationNumber, String operation){
         this.operationNumber = operationNumber;
         this.operation = operation;
     }
 
-    public String getOperation() {
-        return "Operation: " + this.operation;
+    public String getOperation(){
+        return "operation: " + this.operation;
     }
 
-    public String getOperationWithNumber() {
+    public String getOperationWithNumber(){
         return this.operationNumber + " - " + this.operation;
     }
 }

@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+
 }
 
 wrapper {
@@ -17,9 +18,16 @@ subprojects {
         mavenCentral()
     }
 
+
+
     dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
         testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+        implementation project(":module-web")
+        implementation project(":module-service")
+
+        implementation project(":module-repository")
+
     }
 
     test {
@@ -33,9 +41,10 @@ task repack(type: Jar, dependsOn: ':module-main:build') {
         def buildJar = zipTree("${project(':module-main').buildDir}/libs/module-main-all.jar")
         from(buildJar) { into('/') }
         manifest {
-            attributes(
-                    'com.mjc.school.Operations.Main-Class': 'com.mjc.school.com.mjc.school.Operations.Main'
+            attributes (
+                    'Main-Class': 'com.mjc.school.Main'
             )
         }
     }
 }
+

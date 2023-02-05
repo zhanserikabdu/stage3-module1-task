@@ -83,4 +83,3 @@ public class NewsModel {
         return Objects.hash(new Object[]{this.id, this.title, this.content, this.createDate, this.lastUpdatedDate, this.authorId});
     }
 }
-

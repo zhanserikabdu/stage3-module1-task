@@ -4,6 +4,7 @@ import com.mjc.school.controller.NewsController;
 import com.mjc.school.service.dto.NewsDtoRequest;
 import com.mjc.school.service.exceptions.ServiceErrorCode;
 import com.mjc.school.service.exceptions.ValidatorException;
+
 import java.io.PrintStream;
 import java.util.List;
 import java.util.Objects;

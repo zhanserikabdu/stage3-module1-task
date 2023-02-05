@@ -23,4 +23,3 @@ public interface ModelMapper {
     )})
     NewsModel dtoToModel(NewsDtoRequest var1);
 }
-

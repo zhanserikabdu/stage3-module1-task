@@ -4,6 +4,7 @@ import com.mjc.school.service.dto.NewsDtoRequest;
 import com.mjc.school.service.dto.NewsDtoResponse;
 import com.mjc.school.service.factory.ServiceFactory;
 import com.mjc.school.service.interfaces.Service;
+
 import java.util.List;
 
 public class NewsController {
@@ -32,3 +33,4 @@ public class NewsController {
         return this.newsService.deleteById(newsId);
     }
 }
+

@@ -24,4 +24,3 @@ public record NewsDtoRequest(Long id, String title, String content, Long authorI
         return this.authorId;
     }
 }
-

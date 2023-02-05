@@ -21,3 +21,4 @@ public class ServiceFactory {
         return this.newsService;
     }
 }
+

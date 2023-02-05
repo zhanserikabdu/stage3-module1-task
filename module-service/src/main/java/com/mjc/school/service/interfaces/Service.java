@@ -13,3 +13,4 @@ public interface Service<T1, T2> {
 
     Boolean deleteById(Long var1);
 }
+
