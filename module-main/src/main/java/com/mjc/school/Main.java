@@ -1,6 +1,6 @@
 package com.mjc.school;
 
-import com.mjc.school.controller.NewsController;
+import com.mjc.school.controller.implementation.NewsController;
 
 import java.util.Scanner;
 

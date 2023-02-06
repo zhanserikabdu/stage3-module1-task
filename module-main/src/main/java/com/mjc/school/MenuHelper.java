@@ -1,6 +1,6 @@
 package com.mjc.school;
 
-import com.mjc.school.controller.NewsController;
+import com.mjc.school.controller.implementation.NewsController;
 import com.mjc.school.service.dto.NewsDtoRequest;
 import com.mjc.school.service.exceptions.ServiceErrorCode;
 import com.mjc.school.service.exceptions.ValidatorException;

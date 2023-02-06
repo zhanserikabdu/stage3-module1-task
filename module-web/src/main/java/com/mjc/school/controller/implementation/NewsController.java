@@ -1,4 +1,4 @@
-package com.mjc.school.controller;
+package com.mjc.school.controller.implementation;
 
 import com.mjc.school.service.dto.NewsDtoRequest;
 import com.mjc.school.service.dto.NewsDtoResponse;
