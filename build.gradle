@@ -7,6 +7,8 @@ wrapper {
     gradleVersion = gradlewVersion
 }
 
+
+
 subprojects {
     apply plugin: 'java'
     apply plugin: 'jacoco'
@@ -23,11 +25,12 @@ subprojects {
     dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
         testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-        implementation project(":module-web")
-        implementation project(":module-service")
-
-        implementation project(":module-repository")
-
+        //implementation project(':module-web')
+        //implementation project(':module-service')
+        //implementation project(':module-repository')
+        implementation 'org.mapstruct:mapstruct:1.5.3.Final'
+        annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
+        testImplementation "junit:junit:4.13"
     }
 
     test {
